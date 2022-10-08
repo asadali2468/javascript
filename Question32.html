@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 32</title>
+</head>
+<body>
+
+    <h3 id="string"></h3>
+    
+    <script>
+       
+       text = '';
+        
+        var current_users = ['admin', 'BILL', 'mark', 'john', 'jenny', 'elon'];
+        var new_users = ['tommy', 'ELON', 'JOHN']
+
+        const lower_current_users = current_users.map(x => {
+            return x.toLowerCase();
+        });
+        const lower_new_users = new_users.map(x => {
+            return x.toLowerCase();
+        });
+        
+        for(let i = 0; i < lower_current_users.length; i++){
+            if(lower_new_users.includes(lower_current_users[i])){
+                text = " \n " + text + `The username ${lower_current_users[i]} is already in use, please try again. <br>`;
+            }
+            
+        }
+        
+        document.getElementById('string').innerHTML = text;
+        
+    </script>
+</body>
+</html>

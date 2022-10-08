@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 29</title>
+</head>
+<body>
+
+    <h1 id="string"></h1>
+    
+    <script>
+
+        var fruits = ['Guava', 'Avacado','Mango', 'Banana', 'Lychee'];
+        var favorite_fruits = ["Guava", 'Mango', "Lychee"];
+
+        let text = '';
+        let i = 0;
+
+        while (i < fruits.length){
+            if (favorite_fruits.includes(fruits[i])){
+                text = text + `You really like ${fruits[i]}!`;
+            }
+            i++;
+        }
+        document.getElementById('string').innerHTML = text;
+        
+    </script>
+</body>
+</html>

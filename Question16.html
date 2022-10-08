@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 16</title>
+</head>
+<body>
+    <script>
+        const guest = ["Henry", "James", "Ahmed", "Kevin"];
+
+        for(person of guest){
+            console.log(`Hello ${person} hope you are doing well. We are arranging a dinner party at our home tommorow and you are invited.`);
+        }
+
+        console.log(`${guest[0]}, isn't available to attend the party.`);
+
+        guest[0] = "Sam";
+
+        for(person of guest){
+            console.log(`Hello ${person} hope you are doing well. We are arranging a dinner party at our home tommorow and you are invited.`);
+        }
+
+        console.log(`Hey guys, we just found out that we have space for 3 more guests.`);
+
+        guest.unshift("Sara"); //added at start
+        guest.push("Abdullah"); //added at end
+        guest.splice(3, 0, "Tom"); //added in middle
+
+        for(person of guest){
+            console.log(`Hello ${person} hope you are doing well. We are arranging a dinner party at our home tommorow and you are invited.`);
+        }
+
+
+
+    </script>
+</body>
+</html>

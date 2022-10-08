@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+<body>
+    
+    <bold id="lower"></bold><br>
+    <bold id="upper"></bold><br>
+    <bold id="title"></bold><br>
+
+</body>
+    <script>
+        var name = prompt("Please enter your name:");
+
+        var lname = name.toLowerCase();
+        var uname = name.toUpperCase();
+        var tcase = name.split(" ");
+
+        document.getElementById('lower').innerHTML = "Name in LowerCase: " + lname;
+        document.getElementById('upper').innerHTML = "Name in UpperCase: " + uname;
+
+
+        let i = 0;
+        var string = '';
+
+        while(i <= tcase.length){
+            try {
+                let temp = tcase[i].toLowerCase();
+                string = string + ' ' + temp.replace(temp.slice(0,1), temp.slice(0,1).toUpperCase());
+            } catch (error) {
+                console.log(error);
+            }
+            
+            i++;
+
+        }
+        
+
+        document.getElementById('title').innerHTML = "Name in TitleCase: " + string;
+
+        
+
+    </script>
+</html>

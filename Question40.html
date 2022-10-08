@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 40</title>
+</head>
+<body>
+
+    
+    <script>
+        function make_album(name, title, num){
+            const musicAlbum = {
+                artistName: name,
+                albumTitle: title,
+                tracks: num
+            };
+            return musicAlbum;
+        }
+
+        var albums = {
+            album1: make_album("Bhool Bhoolayian 2", "Arijit Singh", 2),
+            album2: make_album("Tu Janne Na", "Atif Aslam", 4),
+            album3: make_album("Ghalat Fehmi", "Asim Azhar"),
+        }
+
+        console.log(albums);
+
+
+       
+    </script>
+</body>
+</html>

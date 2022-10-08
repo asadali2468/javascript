@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 17</title>
+</head>
+<body>
+    <script>
+        const guest = ["Henry", "James", "Ahmed", "Kevin"];
+
+        for(person of guest){
+            console.log(`Hello ${person} hope you are doing well. We are arranging a dinner party at our home tommorow and you are invited.`);
+        }
+
+        console.log(`${guest[0]}, isn't available to attend the party.`);
+
+        guest[0] = "Sam";
+
+        for(person of guest){
+            console.log(`Hello ${person} hope you are doing well. We are arranging a dinner party at our home tommorow and you are invited.`);
+        }
+
+        console.log(`Hey guys, we just found out that we have space for 3 more guests.`);
+
+        guest.unshift("Sara"); //added at start
+        guest.push("Abdullah"); //added at end
+        guest.splice(3, 0, "Tom"); //added in middle
+
+        for(person of guest){
+            console.log(`Hello ${person} hope you are doing well. We are arranging a dinner party at our home tommorow and you are invited.`);
+        }
+
+        console.log(`Hey guys, we just found out that we only have space for 2 guests. Sorry for the inconvenience. 😐`);
+
+        for(let i=0; guest.length != 2; i++){
+            guest.pop();
+            console.log(`Hello ${guest[i]}, sorry you are not invited. Better luck next time! 😂`);
+        }
+        
+        for(person of guest){
+            console.log(`Hey ${person}, You are still invited to the party 🥳🎉`);
+        }
+
+        for(let i=0; i <= guest.length; i++){
+            guest.pop();
+        }
+
+        for(person of guest){
+            console.log(person);
+        }
+
+    </script>
+</body>
+</html>

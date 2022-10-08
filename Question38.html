@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 38</title>
+</head>
+<body>
+
+    <h3 id="string"></h3>
+    <h3 id="string1"></h3>
+    <h3 id="string2"></h3>
+    
+    <script>
+             
+       function describe_city(city, country = 'World'){
+        text = `${city} is in '${country}'.`;
+        return text;
+       }
+
+       document.getElementById('string').innerHTML = describe_city("City", "UAE");
+       document.getElementById('string1').innerHTML = describe_city("Karachi", "Pakistan");
+       document.getElementById('string2').innerHTML = describe_city("Toronto");
+       
+    </script>
+</body>
+</html>

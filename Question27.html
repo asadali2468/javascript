@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 27</title>
+</head>
+<body>
+
+    <h1 id="string"></h1>
+    
+    <script>
+
+        var alien_color = prompt("Enter Color of Alien:");
+        let text = '';
+
+        if (alien_color == 'green'){
+            text = "You just earned 5 points.";
+        }else if (alien_color == 'yellow'){
+            text = "You just earned 10 points.";
+        }else if(alien_color == 'red'){
+            text = "You just earned 15 points.";
+        }
+
+        document.getElementById('string').innerHTML = text;
+    </script>
+</body>
+</html>

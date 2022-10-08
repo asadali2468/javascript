@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 33</title>
+</head>
+<body>
+
+    <h3 id="string"></h3>
+    
+    <script>
+       
+        text = '';
+        
+        var num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        
+        for(var i = 0; i < num.length; i++){
+            if(i == 0){
+                text = text + `${num[i]}st <br>`;
+                console.log(num[i]);
+            }else if(i == 1){
+                text = text + `${num[i]}nd <br>`;
+                console.log(num[i]);
+            }else if(i == 2){
+                text = text + `${num[i]}rd <br>`;
+                console.log(num[i]);
+            }else if(i > 2){
+                text = text + `${num[i]}th <br>`;
+                console.log(num[i]);
+            }
+        }
+
+        
+        
+        document.getElementById('string').innerHTML = text;
+        
+    </script>
+</body>
+</html>

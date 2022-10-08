@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 34</title>
+</head>
+<body>
+
+    <h3 id="string"></h3>
+    
+    <script>
+       
+        const pizza = ['Pepperoni Pizza', 'Veggie Pizza', 'Cheese Pizza', 'Meat Pizza'];
+        text = '';
+
+        for(let i=0; i < pizza.length; i++){
+            text = text + `I like ${pizza[i]}.<br>`;
+        }
+                
+        document.getElementById('string').innerHTML = text;
+
+        const sentence = document.createTextNode("I really like pizza as fast food.");
+        document.getElementById("string").appendChild(sentence);
+        
+    </script>
+</body>
+</html>

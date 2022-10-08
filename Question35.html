@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 35</title>
+</head>
+<body>
+
+    <h3 id="string"></h3>
+    
+    <script>
+       
+        const animals = ['Deer', 'Cow', 'Dog', 'Lion'];
+        text = '';
+
+        for(let i=0; i < animals.length; i++){
+            text = text +`A ${animals[i]} lives in forest. <br>`;
+        }
+                
+        document.getElementById('string').innerHTML = text;
+
+        const common = document.createTextNode("All of these animals pets have four legs.");
+        document.getElementById("string").appendChild(common);
+        
+    </script>
+</body>
+</html>
